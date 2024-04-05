@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-witdh, 
+  initial-scale=1.0">
+    <title>Formulário de Inscrição</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
+    <script type="text/javascript" src="./index.js" defer=""></script>
+    <link rel="stylesheet" href="./index.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="32pt" height="32pt" viewBox="0 0 1280.000000 791.000000" preserveAspectRatio="xMidYMid meet">
+          <g transform="translate(0.000000,791.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+            <path d="M6881 7884 c-83 -22 -150 -62 -222 -134 -105 -104 -113 -127 -218
+-635 -49 -242 -155 -757 -235 -1145 -80 -388 -210 -1022 -290 -1410 -80 -388
+-179 -869 -220 -1070 -69 -336 -190 -924 -476 -2315 -60 -291 -114 -560 -120
+-597 -25 -160 46 -347 172 -450 227 -186 554 -150 729 82 77 101 57 23 279
+1103 60 295 160 778 220 1072 61 294 160 776 220 1070 61 294 160 776 220
+1070 61 294 160 776 220 1070 148 717 327 1593 345 1682 39 189 -6 345 -134
+474 -71 72 -138 111 -228 134 -71 19 -191 18 -262 -1z"></path>
+            <path d="M3050 7100 c-64 -11 -139 -42 -191 -77 -24 -17 -657 -642 -1405
+-1389 -1482 -1479 -1403 -1394 -1439 -1545 -19 -82 -19 -159 0 -234 38 -146
+-41 -61 1429 -1534 894 -896 1381 -1377 1421 -1402 92 -61 176 -83 298 -76
+118 6 184 29 276 95 161 118 240 345 185 533 -42 142 6 90 -1241 1339 l-1163
+1165 1155 1155 c636 635 1169 1175 1185 1199 67 100 97 260 71 380 -56 261
+-317 436 -581 391z"></path>
+            <path d="M9554 7096 c-189 -43 -345 -200 -385 -387 -26 -120 4 -280 71 -380
+16 -24 549 -564 1185 -1199 l1155 -1155 -1163 -1165 c-1247 -1249 -1199 -1197
+-1241 -1339 -55 -188 24 -415 185 -533 92 -66 158 -89 276 -95 122 -7 206 15
+298 76 40 25 527 506 1421 1402 1470 1473 1391 1388 1429 1534 19 75 19 152 0
+234 -36 151 43 66 -1439 1545 -748 747 -1383 1374 -1411 1392 -104 69 -259 98
+-381 70z"></path>
+          </g>
+        </svg>
+      </header>
+      <form onsubmit="adicionarParticipante(event)">
+        <fieldset>
+          <legend>Inscrição</legend>
+
+          <div>
+            <div class="input-wrapper">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_4003_2796)">
+                  <path d="M12 13.3333C12 12.2724 11.5786 11.255 10.8284 10.5048C10.0783 9.75468 9.06087 9.33325 8 9.33325C6.93913 9.33325 5.92172 9.75468 5.17157 10.5048C4.42143 11.255 4 12.2724 4 13.3333" stroke="#9FF9CC" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <path d="M8.00004 9.33333C9.4728 9.33333 10.6667 8.13943 10.6667 6.66667C10.6667 5.19391 9.4728 4 8.00004 4C6.52728 4 5.33337 5.19391 5.33337 6.66667C5.33337 8.13943 6.52728 9.33333 8.00004 9.33333Z" stroke="#9FF9CC" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <path d="M8.00004 14.6666C11.6819 14.6666 14.6667 11.6818 14.6667 7.99992C14.6667 4.31802 11.6819 1.33325 8.00004 1.33325C4.31814 1.33325 1.33337 4.31802 1.33337 7.99992C1.33337 11.6818 4.31814 14.6666 8.00004 14.6666Z" stroke="#9FF9CC" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"></path>
+                </g>
+                <defs>
+                  <clipPath id="clip0_4003_2796">
+                    <rect width="16" height="16" fill="white"></rect>
+                  </clipPath>
+                </defs>
+              </svg>
+
+              <input type="text" placeholder="Nome Completo" name="nome" required="">
+            </div>
+            <div class="input-wrapper">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_4003_2802)">
+                  <path d="M8.00004 10.6666C9.4728 10.6666 10.6667 9.47268 10.6667 7.99992C10.6667 6.52716 9.4728 5.33325 8.00004 5.33325C6.52728 5.33325 5.33337 6.52716 5.33337 7.99992C5.33337 9.47268 6.52728 10.6666 8.00004 10.6666Z" stroke="#9FF9CC" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <path d="M10.6667 5.33326V8.66659C10.6667 9.19702 10.8774 9.70573 11.2525 10.0808C11.6276 10.4559 12.1363 10.6666 12.6667 10.6666C13.1971 10.6666 13.7059 10.4559 14.0809 10.0808C14.456 9.70573 14.6667 9.19702 14.6667 8.66659V7.99992C14.6667 6.49813 14.1596 5.04032 13.2277 3.8627C12.2957 2.68508 10.9934 1.85664 9.53173 1.5116C8.07011 1.16656 6.5348 1.32513 5.17456 1.96163C3.81431 2.59812 2.70882 3.67525 2.0372 5.0185C1.36558 6.36175 1.16717 7.89242 1.47412 9.36251C1.78107 10.8326 2.57539 12.156 3.7284 13.1183C4.88141 14.0805 6.32554 14.6253 7.82683 14.6643C9.32812 14.7034 10.7986 14.2343 12 13.3333" stroke="#9FF9CC" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"></path>
+                </g>
+                <defs>
+                  <clipPath id="clip0_4003_2802">
+                    <rect width="16" height="16" fill="white"></rect>
+                  </clipPath>
+                </defs>
+              </svg>
+
+              <input type="email" placeholder="E-mail" name="email" required="">
+            </div>
+
+            <button>Realizar Inscrição</button>
+          </div>
+        </fieldset>
+      </form>
+      <section class="lista-participantes">
+        <h2>Participantes</h2>
+
+        <div>
+          <table width="100%">
+            <thead style="text-align: left">
+              <tr>
+                <th>Participante</th>
+                <th>Data da Inscrição</th>
+                <th>Data do check-in</th>
+              </tr>
+            </thead>
+            <thead>
+            </thead>
+            <tbody>
+
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js">
+    </script>
+    <script>
+      dayjs.extend(window.dayjs_plugin_relativeTime)
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/locale/pt-br.js">
+    </script>
+    <script>
+      dayjs.locale('pt-br')
+    </script>
+
+
+  </body>
+
+</html>

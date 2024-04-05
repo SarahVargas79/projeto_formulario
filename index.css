@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  /*
+  caixa tenha a largura junto do padding, a largura final vai ser os dois, borda a borda.
+  */
+  box-sizing: border-box;
+}
+
+/*
+variável para poder se usar a qualquer hora, repetir
+--border - é a caix
+*/
+:root {
+  --border: 1px solid #ffffff1a;
+}
+
+body,
+table,
+input,
+button {
+  /*
+  500 - Peso da font
+  140% - Altura da linha
+  */
+  font: 500 16px/140% 'Raleway', sans-serif;
+}
+
+body {
+  background-color: rgb(15, 46, 46);
+  color: white;
+}
+
+.container {
+  max-width: 690px;
+  margin: 0 auto;
+  padding: 20px 32px;
+}
+
+header {
+  padding: 10px 0;
+}
+
+form {
+  border: var(--border);
+  /*borda horizontal*/
+  border-inline: none;
+  padding: 20px 0;
+}
+
+fieldset {
+  border: none;
+}
+
+/*> - Pegando os primeiro filhos níveis de div*/
+fieldset>div {
+  display: flex;
+  gap: 12px;
+}
+
+.input-wrapper {
+  /*flex - Vai crescer a caixa*/
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: var(--border);
+  border-radius: 10px;
+  padding: 8px 12px;
+
+  font: 400 14px/150% 'Raleway', sans-serif;
+  color: #c4c4cc;
+}
+
+input {
+  all: unset;
+}
+
+fieldset legend,
+section h2 {
+  font: 700 17px/140% 'Raleway', sans serif;
+  color: #E1E1E6;
+  padding-bottom: 16px;
+}
+
+fieldset button {
+  /*fit-content - Encaixar o conteúdo*/
+  width: fit-content;
+  border: 0;
+  background: #ff5e00;
+  border-radius: 10px;
+  padding: 7px 20px;
+  font: 700 14px/24px 'Raleway', sans serif;
+  color: #00292E;
+}
+
+fieldset button:hover {
+  background: #fd6c18;
+}
+
+.lista-participantes {
+  padding: 20px 0;
+}
+
+.lista-participantes>div {
+  border: var(--border);
+  border-radius: 8px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table thead {
+  font-size: 15px;
+  line-height: 16px;
+}
+
+thead th,
+tbody td {
+  padding: 13px 16px;
+}
+
+tbody td {
+  border-top: var(--border);
+  font-size: 14px;
+  /*
+  line-height - defini a altura da caixa que um conteúdo de texto pertence, ou seja, definirá a altura que o texto pode ocupar
+  */
+  line-height: 15px;
+  color: #c4c4cc;
+}
+
+tbody td strong {
+  color: white;
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: 600;
+}
+
+tbody td small {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+tbody td button {
+  /*Tira toda inform. feita pelo navegador*/
+  all: unset;
+  color: lime;
+}
+
+tbody td button:hover {
+  text-decoration: underline;
+}
